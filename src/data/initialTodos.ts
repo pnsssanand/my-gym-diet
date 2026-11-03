@@ -1,0 +1,58 @@
+import { TodoItem } from '../types';
+
+export const INITIAL_TODOS: TodoItem[] = [
+  {
+    id: 'todo-1',
+    title: 'Morning Push Workout (Chest, Shoulders & Triceps)',
+    category: 'Gym',
+    priority: 'high',
+    dueDate: new Date().toISOString().split('T')[0],
+    completed: true,
+    createdAt: new Date().toISOString(),
+  },
+  {
+    id: 'todo-2',
+    title: 'Prep 4 Hard-Boiled Eggs for Evening Snack',
+    category: 'Diet',
+    priority: 'high',
+    dueDate: new Date().toISOString().split('T')[0],
+    completed: true,
+    createdAt: new Date().toISOString(),
+  },
+  {
+    id: 'todo-3',
+    title: 'Complete 2600ml daily water intake goal',
+    category: 'Diet',
+    priority: 'high',
+    dueDate: new Date().toISOString().split('T')[0],
+    completed: false,
+    createdAt: new Date().toISOString(),
+  },
+  {
+    id: 'todo-4',
+    title: 'Buy fresh chicken breast & spinach from local market',
+    category: 'Grocery',
+    priority: 'medium',
+    dueDate: new Date(Date.now() + 86400000).toISOString().split('T')[0],
+    completed: false,
+    createdAt: new Date().toISOString(),
+  },
+  {
+    id: 'todo-5',
+    title: 'Log bodyweight on digital scale (empty stomach at 7 AM)',
+    category: 'Personal',
+    priority: 'medium',
+    dueDate: new Date(Date.now() + 86400000).toISOString().split('T')[0],
+    completed: false,
+    createdAt: new Date().toISOString(),
+  },
+  {
+    id: 'todo-6',
+    title: 'Check pantry for roasted chana sattu stock',
+    category: 'Grocery',
+    priority: 'low',
+    dueDate: new Date(Date.now() + 86400000 * 2).toISOString().split('T')[0],
+    completed: false,
+    createdAt: new Date().toISOString(),
+  },
+];
